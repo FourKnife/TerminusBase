@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -677,13 +677,60 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
+        <!--Split View Controller-->
+        <scene sceneID="eZy-ZH-Oyg">
+            <objects>
+                <splitViewController id="gWO-S8-G0E" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="dDW-hp-ZBs"/>
+                        <splitViewItem id="d6q-wG-bhs"/>
+                    </splitViewItems>
+                    <splitView key="splitView" misplaced="YES" dividerStyle="thin" vertical="YES" id="Sxa-LP-I3E">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="650"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </splitView>
+                    <connections>
+                        <segue destination="6kz-YW-Kh7" kind="relationship" relationship="splitItems" id="By4-nG-iHg"/>
+                        <segue destination="Tyr-ew-9AP" kind="relationship" relationship="splitItems" id="5Qp-mG-oQG"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="FBk-Lk-xXM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="2124"/>
+        </scene>
+        <!--Nav View Controller-->
+        <scene sceneID="1QS-a8-lni">
+            <objects>
+                <viewController id="6kz-YW-Kh7" customClass="NavViewController" customModule="TerminusBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="uJ6-8k-4lW">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="e7r-YI-tSP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="1635"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Tn-zR-zQJ">
+            <objects>
+                <viewController id="Tyr-ew-9AP" sceneMemberID="viewController">
+                    <view key="view" id="COt-li-SXM">
+                        <rect key="frame" x="0.0" y="0.0" width="920" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="l2t-6V-G3L" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="2501"/>
+        </scene>
         <!--Logo Content View Controller-->
         <scene sceneID="SOI-5C-zQA">
             <objects>
                 <splitViewController id="GfJ-Q4-WgC" customClass="LogoContentViewController" customModule="TerminusBase" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="fT6-qR-T79"/>
-                        <splitViewItem id="T8b-B3-Y4v"/>
+                        <splitViewItem id="jtW-fs-yys"/>
                     </splitViewItems>
                     <splitView key="splitView" misplaced="YES" dividerStyle="thin" id="tc2-Bt-wob">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="700"/>
@@ -691,7 +738,7 @@
                     </splitView>
                     <connections>
                         <segue destination="0je-JI-BBr" kind="relationship" relationship="splitItems" id="4G0-Eh-cwi"/>
-                        <segue destination="7Ox-h0-Pcu" kind="relationship" relationship="splitItems" id="oGp-HF-RLK"/>
+                        <segue destination="gWO-S8-G0E" kind="relationship" relationship="splitItems" id="2JI-b8-eAg"/>
                     </connections>
                 </splitViewController>
                 <customObject id="maQ-fC-BTn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -726,20 +773,7 @@
                 </viewController>
                 <customObject id="uXd-Yg-FAR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="1681"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="8ey-q8-sBq">
-            <objects>
-                <viewController id="7Ox-h0-Pcu" sceneMemberID="viewController">
-                    <view key="view" id="vrN-vM-Gf3">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="650"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="qRb-UI-sgt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="19" y="2280"/>
+            <point key="canvasLocation" x="-1734" y="1286"/>
         </scene>
     </scenes>
     <resources>
