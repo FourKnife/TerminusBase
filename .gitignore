@@ -6,4 +6,5 @@ build/*
 .svn
 #os x noise
 .DS_Store
-profile 
+profile
+TerminusBase.xcodeproj/project.xcworkspace/xcuserdata/duanrong.xcuserdatad/UserInterfaceState.xcuserstate 
