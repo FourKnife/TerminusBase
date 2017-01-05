@@ -1,0 +1,10 @@
+#xcode noise
+build/*
+*.pbxuser
+*.modelv3
+#old skool
+.svn
+#os x noise
+.DS_Store
+profile
+TerminusBase.xcodeproj/project.xcworkspace/xcuserdata/duanrong.xcuserdatad/UserInterfaceState.xcuserstate 
